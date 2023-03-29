@@ -1,0 +1,3 @@
+.gallery {
+	@apply md:w-auto h-auto  lg:w-auto lg:h-auto object-fill;
+}

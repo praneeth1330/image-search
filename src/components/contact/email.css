@@ -1,0 +1,58 @@
+.trans {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.light {
+	/* background: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh; */
+	/* background-color: #d9afd9;
+	background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%); */
+	background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+.night {
+	/* background: url("https://images.pexels.com/photos/746111/pexels-photo-746111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-repeat: no-repeat;
+
+	background-size: cover;
+	background-position: center;
+	height: 100vh; */
+	background: #bdc3c7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+	background: linear-gradient(to left, #2c3e50, #bdc3c7);
+	transition: 5s ease;
+	animation-duration: 0.5s;
+}
+
+.box {
+	@apply flex px-5 flex-col  gap-2 text-3xl p-2;
+}
+
+.box-label {
+	@apply text-[#2c3e50] dark:text-gray-900;
+}
+
+.box-input {
+	@apply bg-transparent text-2xl border-b-2 border-orange-600 dark:border-gray-900 focus:outline-none  w-[100%] focus:bg-transparent;
+}
+
+label i {
+	@apply text-[#2c3e50] dark:text-gray-900;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
